@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Calculator</h2>
+  <!-- Use #one and #Two as template reference variables to access the input values -->
+  <input type="number" #one placeholder="Enter first number">
+  <input type="number" #Two placeholder="Enter second number">
+
+  <button (click)="functionCall(one.value, Two.value)">Add</button> <br> <br>
+  <button (click)="functionCall2(one.value, Two.value)">Sub</button> <br> <br>
+  <button (click)="functionCall3(one.value, Two.value)">Multiply</button> <br> <br>
+  <button (click)="functionCall4(one.value, Two.value)">Div</button>
+
+  <div>
+    <p>Result: {{ result }}</p>
+  </div>
+</div>
